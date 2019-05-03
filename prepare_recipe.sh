@@ -27,6 +27,7 @@ rm ~/kaldi/egs/$recipe_name/s5/local/nnet/run_dnn.sh
 cp -a Recipe_Files/run_dnn.sh ~/kaldi/egs/$recipe_name/s5/local/nnet/run_dnn.sh
 
 cp -a Recipe_Files/local_custom ~/kaldi/egs/$recipe_name/s5/local_custom
+cp -a Recipe_Files/utils_custom ~/kaldi/egs/$recipe_name/s5/utils_custom
 cp -a Recipe_Files/Python_Files ~/kaldi/egs/$recipe_name/s5/Python_Files
 cp -a Recipe_Files/steps_fa ~/kaldi/egs/$recipe_name/s5/steps_fa
 

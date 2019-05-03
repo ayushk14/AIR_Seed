@@ -54,7 +54,7 @@ local/timit_prepare_dict.sh
 utils/prepare_lang.sh --sil-prob 0.0 --position-dependent-phones false --num-sil-states 3 \
  data/local/dict "sil" data/local/lang_tmp data/lang
 
-local_custom/timit_format_data.sh
+local/timit_format_data.sh
 
 echo ============================================================================
 echo "         MFCC Feature Extration & CMVN for Training and Test set          "
