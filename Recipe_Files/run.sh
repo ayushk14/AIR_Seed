@@ -230,14 +230,14 @@ for iter in 1 2 3 4; do
    data/test data/lang_test_bg exp/tri4_nnet/decode_test \
    exp/sgmm2_4_mmi_b0.1/decode_test_it$iter exp/combine_2/decode_test_it$iter
 done
-
+COMMENT
 echo ============================================================================
 echo "       Getting Intermediate Results [see RESULTS file]                    "
 echo ============================================================================
 
 #bash RESULTS dev
 bash RESULTS test
-COMMENT
+
 echo ============================================================================
 echo "               DNN Hybrid Training & Decoding (Karel's recipe)            "
 echo ============================================================================
@@ -249,7 +249,7 @@ echo ===========================================================================
 echo "                    Doing Force Alignment (SGMM2)                         "
 echo ============================================================================
 
-steps_fa/align_fmllr.sh --nj "$train_nj" --cmd "$train_cmd" \
+steps_fa/align_fmllr.sh --nj "$train_nj" retry_beam 250 --cmd "$train_cmd" \
  data/dev data/lang exp/tri3 exp/tri3_ali_fa
 : <<COMMENT
 echo ============================================================================
