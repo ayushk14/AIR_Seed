@@ -9,7 +9,6 @@ AIR_dir = sys.argv[1]
 Recipe_dir = sys.argv[2]
 data_files = sys.argv[3]
 dict_files = sys.argv[4]
-use_bucket = sys.argv[5]
 
 # Indiividual speaker list
 train_spk_list = []
